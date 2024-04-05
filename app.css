@@ -1,0 +1,146 @@
+body {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #dd6041;
+
+
+}
+.container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+    background-color: #e07b62;
+    
+}
+
+.champs {
+    
+    
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+
+}
+
+h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 30px 0;
+    font-size: 50px;
+}
+
+
+
+input[type="text"] {
+    width:  200px;
+    padding: 10px;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    height: 20px;
+    
+    
+}
+
+button {
+   
+    background:transparent ;
+    margin-left: 5px;
+    margin-top: 6px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    
+}
+
+
+button :hover{
+    background-color: #e77b60;
+}
+
+
+input[type="date"] {
+    width: 200px;
+    padding: 10px;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    height: 20px;
+    
+}
+
+select{
+
+    width: 200px;
+    padding: 10px;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    height: 40px;
+    display: flex;
+
+}
+
+ul {
+    width: 99%;
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    width: 98%;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgb(0, 0, 0,0.1);
+    transition: background-color 0.3s ease-in-out;
+}
+
+li:hover {
+    background-color: #ddd;
+}
+
+ion-icon{
+
+    font-size:  20px;
+    margin-right: 5px;
+    background: midnightblue;
+    padding: 0.5rem;
+    color: #f1f1f1;
+    border-radius: 50%;
+
+}
+
+.delete {
+    background: #dd6041;
+    transition: all;
+    
+}
+.ajout{
+    background: #000;
+}
+
+
+
+.remove-task {
+    animation: removeAnimation 0.3s ease forwards;
+}
+
+label{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: auto;
+    font-size: 20px;
+}

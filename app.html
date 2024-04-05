@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App_Interactive</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+
+
+    <h1>Ma Liste de Tâches</h1>
+
+    <div class="container">
+
+        <div class="champs">
+            <div>
+
+            <label for="TaskInput">Ajouter une tache</label>
+            <input type="text" id="TaskInput" placeholder="Ajouter une nouvelle tâche..."  aria-label="ajouter Tache">
+            </div>
+            <button onclick="addTask()"><ion-icon name="add-circle-outline" class="ajout"></ion-icon></button>
+
+            <div>
+
+            <label for="deadlineInput">Choisir  une date</label>
+            <input type="date" id="deadlineInput"  placeholder="Ajouter une date d'échéance..."  aria-label="   Ajouter une date" >
+            </div>
+
+            <div>
+    
+            <label for="priority">Prendre une priorité</label>
+            <select  id="priority" aria-label="Prendre une priorité" >
+                <option value="priori">Saisir une priorité...</option>
+                <option value="High"> Haute priorité</option>
+                <option value="Medium">Moyenne priorité</option>
+                <option value="Low"> Basse priorité</option>
+            </select>
+            </div>
+
+            <div>
+            <label for="status">Prendre Un Statut</label>
+            <select  id="status" aria-label="Prendre Un Statut">
+                <option value="priori">Saisir une statut...</option>
+                <option value="to do">A faire</option>
+                <option value="in progress">En cours</option>
+                <option value="finished">Terminé</option>
+            </select>
+            </div>
+
+        </div>
+
+        <ul id="TaskList"></ul>
+        
+    </div>
+
+    <script  type = "module"  src = "https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js" > </script> 
+    <script  nomodule  src = "https://unpkg .com/ionicons@7.1.0/dist/ionicons/ionicons.js" > </script>
+
+    <script  src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="app.js"></script>
+</body>
+</html>
+
+
+
