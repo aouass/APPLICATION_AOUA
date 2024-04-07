@@ -82,3 +82,22 @@
 // function deleteTask(task){
 //     task.remove();
 // }
+
+
+
+
+
+
+
+// localStorage.setItem('name1','autre nom');
+
+// localStorage.setItem('NBR',JSON.stringify(nbre));
+// var test = JSON.parse(localStorage.getItem("NBR"));
+
+// alert(localStorage.getItem("NBR"));
+// alert("name = "+ localStorage.getItem('name'));
+// alert("name1 = "+ localStorage.getItem('name1'));    
+// let taskInput = document.getElementById('TaskInput');
+// alert(taskInput);
+// let taskText = taskInput.value;
+// pour recuperer mes elements stocker

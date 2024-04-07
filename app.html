@@ -9,7 +9,7 @@
 <body>
 
 
-    <h1>Ma Liste de Tâches</h1>
+    <header><h1>Ma Liste de Tâches</h1></header>
 
     <div class="container">
 
@@ -17,36 +17,38 @@
             <div>
 
             <label for="TaskInput">Ajouter une tache</label>
-            <input type="text" id="TaskInput" placeholder="Ajouter une nouvelle tâche..."  aria-label="ajouter Tache">
+            <input type="text" id="TaskInput" placeholder="Nouvelle tâche..."  aria-label="ajouter Tache">
             </div>
-            <button onclick="addTask()"><ion-icon name="add-circle-outline" class="ajout"></ion-icon></button>
+            
 
             <div>
 
             <label for="deadlineInput">Choisir  une date</label>
-            <input type="date" id="deadlineInput"  placeholder="Ajouter une date d'échéance..."  aria-label="   Ajouter une date" >
+            <input type="date" id="deadlineInput"  placeholder="Date d'échéance..."  aria-label="   Ajouter une date" >
             </div>
 
             <div>
     
             <label for="priority">Prendre une priorité</label>
             <select  id="priority" aria-label="Prendre une priorité" >
-                <option value="priori">Saisir une priorité...</option>
-                <option value="High"> Haute priorité</option>
-                <option value="Medium">Moyenne priorité</option>
-                <option value="Low"> Basse priorité</option>
+                <option value="Saisir une priorité...">Saisir une priorité...</option>
+                <option value="Haute priorité"> Haute priorité</option>
+                <option value="Moyenne priorité">Moyenne priorité</option>
+                <option value="Basse priorité"> Basse priorité</option>
             </select>
             </div>
 
             <div>
             <label for="status">Prendre Un Statut</label>
             <select  id="status" aria-label="Prendre Un Statut">
-                <option value="priori">Saisir une statut...</option>
-                <option value="to do">A faire</option>
-                <option value="in progress">En cours</option>
-                <option value="finished">Terminé</option>
+                <option value="Saisir une statut...">Saisir une statut...</option>
+                <option value="A faire">A faire</option>
+                <option value="En cours">En cours</option>
+                <option value="Terminé">Terminé</option>
             </select>
+            
             </div>
+            <button onclick="addTask()"><ion-icon name="add-circle-outline" class="ajout"></ion-icon></button>
 
         </div>
 
