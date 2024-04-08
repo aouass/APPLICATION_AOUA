@@ -11,49 +11,40 @@
     <header><h1>Liste de taches</h1></header>
 
     <form >
-        <!-- <label for="TaskInput">Ajouter une tache</label> -->
-        <input type="text" class="todo-input" placeholder="Nouvelle tâche..."  aria-label="ajouter Tache">
-        <input type="date" class="deadlineInput"  placeholder="Date d'échéance..."  aria-label="   Ajouter une date" >
-            
-<!-- 
-        <label for="deadlineInput">Choisir  une date</label>
-        <input type="date" id="deadlineInput"  placeholder="Date d'échéance..."  aria-label="   Ajouter une date" >
-           
-    
-        <label for="priority">Prendre une priorité</label>
-        <select  id="priority" aria-label="Prendre une priorité" >
-            <option value="Saisir une priorité...">Saisir une priorité...</option>
-            <option value="Haute priorité"> Haute priorité</option>
-            <option value="Moyenne priorité">Moyenne priorité</option>
-            <option value="Basse priorité"> Basse priorité</option>
-        </select>
-            
-        <label for="status">Prendre Un Statut</label>
-        <select  id="status" aria-label="Prendre Un Statut">
-            <option value="Saisir une statut...">Saisir une statut...</option>
-            <option value="A faire">A faire</option>
-            <option value="En cours">En cours</option>
-            <option value="Terminé">Terminé</option>
-        </select> -->
-            
-            
-        <div class="select">
-            <select name="todos" class="priority" title="pr">
-                <option value="Toutes">Toutes</option>
-                <option value="Haute priorité"> Haute priorité</option>
-                <option value="Moyenne priorité">Moyenne priorité</option>
-                <option value="Basse priorité"> Basse priorité</option>
-            </select>
-        </div>
+        
+            <label for="todoInput">Nouvelle tâche :</label>
+            <input type="text" class="todo-input" placeholder="Nouvelle tâche..."  aria-label="ajouter Tache">
+        
+        
+            <label for="deadlineInput">Date d'échéance :</label>
+            <input type="date" class="deadlineInput"  placeholder="Date d'échéance..."  aria-label="   Ajouter une date" >
+        
 
-        <div class="Selection">
-            <select name="todostatus" class="Status" title="se">
-                <option value="Saisir une statut...">Saisir une statut...</option>
-                <option value="A faire">A faire</option>
-                <option value="En cours">En cours</option>
-                <option value="Terminé">Terminé</option>
-            </select>
-        </div>
+            
+        
+            <label for="priority">Priorité :</label>
+            <div class="select">
+                <select name="todos" class="priority" title="pr" aria-label="priorités">
+                    <option value="Toutes">Toutes</option>
+                    <option value="Haute-priorité"> Haute priorité</option>
+                    <option value="Moyenne-priorité">Moyenne priorité</option>
+                    <option value="Basse-priorité"> Basse priorité</option>
+                </select>
+            </div>
+           
+
+
+       
+            <label for="status">Statut :</label>
+            <div class="Selection">
+                <select name="todostatus" class="Status" title="se"  aria-label="Status">
+                    <option value=" Toutes">Toutes statuts...</option>
+                    <option value="A faire">A faire</option>
+                    <option value="progress">En cours</option>
+                    <option value="finished">Terminé</option>
+                </select>
+            </div>
+       
         <button class="todo-button" type="submit" title="boutton"><ion-icon name="add-circle-outline" title="img"></ion-icon></button>
     </form>
     <div class="contener">

@@ -108,7 +108,7 @@ ul {
     height: 20%;
     list-style: none;
     padding: 0;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 
 }
 
@@ -117,7 +117,7 @@ ul li {
     height: 50%;
     /* margin-bottom: 10px; */
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     background-color: #e3dfdf;
     padding: 10px;
