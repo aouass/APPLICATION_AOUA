@@ -1,4 +1,4 @@
-name: APPLICATION_AOUA
+name: App_Gestion_Taches
 
 on:
   push:
