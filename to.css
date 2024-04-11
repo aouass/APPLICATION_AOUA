@@ -75,7 +75,7 @@ form button:hover{
 .todo-list{
     min-width: 30%;
     list-style: none;
-    /* justify-content: space-between; */
+    
 }
 .todo{
     margin: 0.5rem;
@@ -194,6 +194,7 @@ select{
     background: white;
     color: bisque;
 }
+/* j'ai joué sur la responsivité de mon app. */
 
 @media screen and (max-width: 768px) {
     form input[type="text"],
