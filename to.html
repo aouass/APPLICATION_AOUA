@@ -11,38 +11,44 @@
     <header><h1>Liste de taches</h1></header>
 
     <form >
+            <div class="nomtache">        
+                 <label for="todoInput" class="label">Nouvelle tâche </label>
+                 <input type="text" class="todo-input" placeholder="Nouvelle tâche..."  aria-label="ajouter Tache">
+            </div>
         
-            <label for="todoInput">Nouvelle tâche :</label>
-            <input type="text" class="todo-input" placeholder="Nouvelle tâche..."  aria-label="ajouter Tache">
         
-        
-            <label for="deadlineInput">Date d'échéance :</label>
-            <input type="date" class="deadlineInput"  placeholder="Date d'échéance..."  aria-label="   Ajouter une date" >
+           <div class="datetache">
+                <label for="deadlineInput" class="label">Date d'échéance </label>
+                <input type="date" class="deadlineInput"  placeholder="Date d'échéance..."  aria-label="   Ajouter une date" >
+           </div>
         
 
             
         
-            <label for="priority">Priorité :</label>
-            <div class="select">
-                <select name="todos" class="priority" title="pr" aria-label="priorités">
-                    <option value="Toutes">Toutes</option>
-                    <option value="Haute-priorité"> Haute priorité</option>
-                    <option value="Moyenne-priorité">Moyenne priorité</option>
-                    <option value="Basse-priorité"> Basse priorité</option>
-                </select>
+            <div class="priorite">
+                <label for="priority" class="label">Priorité </label>
+                <div class="select">
+                    <select name="todos" class="priority" title="pr" aria-label="priorités">
+                        <option value="Toutes">Toutes</option>
+                        <option value="Haute-priorité"> Haute priorité</option>
+                        <option value="Moyenne-priorité">Moyenne priorité</option>
+                        <option value="Basse-priorité"> Basse priorité</option>
+                    </select>
+                </div>    
             </div>
-           
 
 
        
-            <label for="status">Statut :</label>
-            <div class="Selection">
-                <select name="todostatus" class="Status" title="se"  aria-label="Status">
-                    <option value=" Toutes">Toutes statuts...</option>
-                    <option value="A faire">A faire</option>
-                    <option value="progress">En cours</option>
-                    <option value="finished">Terminé</option>
-                </select>
+            <div class="stat">
+                <label for="status" class="label">Statut </label>
+                <div class="Selection">
+                    <select name="todostatus" class="Status" title="se"  aria-label="Status">
+                        <option value=" Toutes">Toutes statuts...</option>
+                        <option value="A-faire">A faire</option>
+                        <option value="En-cours">En cours</option>
+                        <option value="Terminé">Terminé</option>
+                    </select>
+                </div>
             </div>
        
         <button class="todo-button" type="submit" title="boutton"><ion-icon name="add-circle-outline" title="img"></ion-icon></button>

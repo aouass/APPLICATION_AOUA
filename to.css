@@ -10,16 +10,32 @@ body{
      font-family: Arial, Helvetica, sans-serif;
      min-height: 100vh;
 }
+
 header{
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 1rem;
-    
 }
-header, form{
+
+form{
     min-height: 20vh;
     display: flex;
     justify-content: center;
     align-items: center;
     
+}
+
+.nomtache,.datetache,.priorite,.stat{
+    display: flex;
+    flex-direction: column;
+}
+.todo-input, .deadlineInput{
+    margin: 1rem;
+}
+.label{
+   margin-left: 16%;
 }
 form input{
     padding: 0.1rem;
@@ -40,7 +56,7 @@ form button{
     cursor: pointer;
     transition: all 0.3s ease;
     height: 50px;
-    margin-bottom: 0px
+    margin-top: 14px;
 
 }
 
@@ -191,7 +207,137 @@ select{
         width: 100%; /* Largeur de 100% sur les petits écrans */
     }
 }
-/* form label {
-    margin-bottom: 5px;
-    text-align: end;
-} */
+@media screen and (max-width: 668px) {
+    .label{
+        font-size: small;
+        margin-left: 18%;
+    }
+    form input[type="text"]{
+        width: 69%; /* Largeur de 69% sur les petits écrans */
+        height: 30px;
+        font-size: 0.7rem;
+
+    }
+    form input[type="date"]{
+        width: 69%; /* Largeur de 69% sur les petits écrans */
+        height: 30px;
+        font-size: 0.7rem;
+    }
+    form select{
+        width: 69%; /* Largeur de 100% sur les petits écrans */
+        height: 30px;
+        font-size: 0.7rem;
+    }
+    form button {
+       height: 50px;
+       width: 50px;
+       margin-right: 14%;
+    }
+    select{
+        width: 8rem;
+        cursor: pointer;
+        padding: 1rem ;
+        background-color: bisque;
+        border-radius: 15px;
+        height: 42px;
+    }
+    .select::after{
+        content: "\25BC";
+        position:absolute;
+        background: black;
+        top: 0;
+        right: 0;
+        padding: 0.7rem;
+        pointer-events: none;
+        transition: all 0.3s ease;
+    }
+    .Selection::after{
+        content: "\25BC";
+        position:absolute;
+        background: black;
+        top: 0;
+        right: 0;
+        padding: 0.7rem;
+        pointer-events: none;
+        transition: all 0.3s ease;
+    }
+    
+    .todo {
+        width: 100%; /* Largeur de 100% sur les petits écrans */
+    }
+}
+@media screen and (max-width: 568px) {
+    .label{
+        font-size: 0.48rem;
+        margin-left: 12%;
+        /* font-size: 0.3; */
+    }
+    form input[type="text"]{
+        width: 50%; /* Largeur de 69% sur les petits écrans */
+        height: 15px;
+        font-size: 0.4rem;
+        /* margin: 12%; */
+
+    }
+    form input[type="date"]{
+        width: 80%; /* Largeur de 69% sur les petits écrans */
+        height: 15px;
+        font-size: 0.4rem;
+        margin: 25%;
+    }
+    form select{
+        width: 70%; /* Largeur de 100% sur les petits écrans */
+        height: 8px;
+        font-size: 0.4rem;
+    }
+    form button {
+       height: 50px;
+       width: 50px;
+       margin-right: 2%;
+    }
+    select{
+        width: 2rem;
+        cursor: pointer;
+        padding: 1rem ;
+        background-color: bisque;
+        border-radius: 15px;
+        height: 21px;
+    }
+    .select::after{
+        content: "\25BC";
+        position:absolute;
+        background: black;
+        top: 0;
+        right: 0;
+        padding: 0.7rem;
+        pointer-events: none;
+        transition: all 0.3s ease;
+    }
+    .Selection::after{
+        content: "\25BC";
+        position:absolute;
+        background: black;
+        top: 0;
+        right: 0;
+        padding: 0.7rem;
+        pointer-events: none;
+        transition: all 0.3s ease;
+    }
+    
+    .todo {
+        width: 100%; /* Largeur de 100% sur les petits écrans */
+    }
+}
+@media screen and (max-width: 280px) {
+    form input[type="text"],
+    form input[type="date"],
+    form select,
+    form button {
+        width: 100%; /* Largeur de 100% sur les petits écrans */
+    }
+
+    .todo {
+        width: 100%; /* Largeur de 100% sur les petits écrans */
+    }
+}
+
